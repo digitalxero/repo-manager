@@ -28,8 +28,28 @@ General purpose package repository manager that supports plugable metadata gener
   * eg LocalStorage, RedisStorage, DBStorage, etc
 
 ### Web API
-* TBD
+* /repos/
+  * **GET** List all repos
 
+* /repos/:repo_name/
+  * **POST** Create repository :repo_name
+  * **GET** List all packages in :repo_name
+  * **DELETE** delete repo :repo_name
+  * **TRACE** rebuild repo :repo_name
+
+* /repos/:repo_name/packages/
+  * **GET** List all packages in :repo_name
+  * **POST** (file contents posted) add package to :repo_name
+
+* /repos/:repo_name/packages/:package_name/
+  * **GET** download :package_name from :repo_name (may be a 301/305/307 response to redirect to the storage backend url)
+  * **DELETE** remove :package_name from :repo_name
+
+* /repos/:repo_name/repodata/*
+  * **GET** return the yum repo metadata for :repo_name
+
+* /repos/:repo_name/dist/*
+  * **GET** return the apt metadata for :repo_name
 
 #### Notes
 The reason we need two sperate storage backends is because the metadata must be updated atomically, where as saving a package to storage does not need to be atomic so for the metadata we need a backend that allows locking or CAS (Check & Set)
