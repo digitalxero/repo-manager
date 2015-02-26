@@ -1,4 +1,4 @@
-from repo_manager.metadata import *
+from repo_manager.metadata import test
 
 def test_placeholder():
-    assert True
+    assert test == 'true'
