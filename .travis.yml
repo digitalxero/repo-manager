@@ -9,4 +9,4 @@ script:
     - py.test repo_manager --strict --cov=repo_manager --cov-report=term-missing
     - py.test repo_manager --strict --cov=repo_manager
 after_success:
-  - coveralls
+  - coveralls debug
