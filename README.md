@@ -1,4 +1,6 @@
 # Repo Manager
+[![Build Status](https://travis-ci.org/Digitalxero/repo-manager.svg?branch=master)](https://travis-ci.org/Digitalxero/repo-manager)
+
 General purpose package repository manager that supports plugable metadata generators, and storage backends
 
 ###	Command Line API
