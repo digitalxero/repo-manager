@@ -1,5 +1,5 @@
 # Repo Manager
-[![Build Status](https://travis-ci.org/Digitalxero/repo-manager.svg?branch=master)](https://travis-ci.org/Digitalxero/repo-manager)
+[![Build Status](https://travis-ci.org/Digitalxero/repo-manager.svg?branch=master)](https://travis-ci.org/Digitalxero/repo-manager) [![Coverage Status](https://coveralls.io/repos/Digitalxero/repo-manager/badge.svg)](https://coveralls.io/r/Digitalxero/repo-manager)
 
 General purpose package repository manager that supports plugable metadata generators, and storage backends
 
