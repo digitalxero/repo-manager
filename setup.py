@@ -8,7 +8,6 @@ cwd = os.path.abspath(os.path.dirname(__file__))
 with io.open(os.path.join(cwd, 'README.md'), encoding='utf-8') as fd:
     long_description = fd.read()
 
-
 setup(
     name='repo-manager',
     version='0.0.1',
@@ -26,5 +25,5 @@ setup(
         'Programming Language :: Python :: 3',
     ],
     keywords=('createrepo'),
-    packages=find_packages(where='src'),
+    packages=find_packages(),
 )
