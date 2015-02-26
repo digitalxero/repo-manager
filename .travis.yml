@@ -7,5 +7,6 @@ before_script:
     - pip install -r test_requirements.txt
 script:
     - py.test repo_manager --strict --cov=repo_manager --cov-report=term-missing --cov-report=xml
+    - cat .coverage
 after_success:
   - coveralls
