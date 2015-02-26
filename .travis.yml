@@ -8,4 +8,4 @@ before_script:
 script:
     - py.test repo_manager --strict --cov=repo_manager --cov-report=term-missing
 after_success:
-  - coveralls debug
+  - coveralls
