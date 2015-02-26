@@ -1,10 +1,11 @@
 language: python
 python:
     - 3.4
+install:
+    - python setup.py install
 before_script:
     - pip install -r test_requirements.txt
 script:
-    - cd src/repo_manager
-    - py.test --strict --cov=. --cov-report=term-missing
+    - py.test repo_manager --strict --cov=repo_manager --cov-report=term-missing
 after_success:
   - coveralls debug

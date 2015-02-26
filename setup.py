@@ -26,5 +26,5 @@ setup(
         'Programming Language :: Python :: 3',
     ],
     keywords=('createrepo'),
-    packages=find_packages(),
+    packages=find_packages(where='src'),
 )
