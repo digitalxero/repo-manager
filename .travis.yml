@@ -2,7 +2,7 @@ language: python
 python:
     - 3.4
 install:
-    - python setup.py install
+    - pip install -e .
 before_script:
     - pip install -r test_requirements.txt
 script:

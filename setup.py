@@ -9,7 +9,7 @@ with io.open(os.path.join(cwd, 'README.md'), encoding='utf-8') as fd:
     long_description = fd.read()
 
 setup(
-    name='repo-manager',
+    name='repo_manager',
     version='0.0.1',
     description=('General purpose package repository manager that '
                  'supports plugable metadata generators, and storage backends'),
