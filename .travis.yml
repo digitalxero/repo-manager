@@ -5,6 +5,6 @@ before_script:
     - pip install -r test_requirements.txt
 script:
     - cd src/repo_manager
-    - py.test repo_manager --strict --cov=. --cov-report=term-missing
+    - py.test --strict --cov=. --cov-report=term-missing
 after_success:
   - coveralls debug
